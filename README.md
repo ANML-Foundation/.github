@@ -73,7 +73,48 @@ ANML doesn't replace existing protocols — it gives agents the semantic context
 | [anml-server-rust](https://github.com/ANML-Foundation/anml-server-rust) | Reference ANML server implementation in Rust |
 | [anml-client-rust](https://github.com/ANML-Foundation/anml-client-rust) | Reference ANML client implementation in Rust |
 
-## Quick Example (XML)
+## Quick Example
+
+**JSON**
+
+```json
+{
+  "anml": "1.0",
+  "ttl": 300,
+  "head": { "title": "Checkout — Acme Electronics" },
+  "constraints": {
+    "disclosure": [
+      { "field": "payment-credential", "requires": "explicit-consent" },
+      { "field": "shipping-address", "requires": "explicit-consent" }
+    ]
+  },
+  "state": {
+    "flow": {
+      "step": [
+        { "id": "cart", "label": "Cart", "status": "completed" },
+        { "id": "checkout", "label": "Checkout", "status": "current" },
+        { "id": "payment", "label": "Payment", "status": "pending" }
+      ]
+    }
+  },
+  "interact": {
+    "action": [
+      { "id": "create-session", "method": "POST", "endpoint": "/checkout-sessions", "auth": "required" }
+    ]
+  },
+  "knowledge": {
+    "inform": [
+      { "confidentiality": "public", "ttl": 3600, "content": "Free shipping over $75. 30-day returns." }
+    ]
+  },
+  "persona": {
+    "tone": { "value": "helpful" },
+    "instructions": "Confirm the final amount before requesting payment."
+  }
+}
+```
+
+**XML**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
