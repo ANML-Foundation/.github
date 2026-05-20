@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://anmlfoundation.org">
-    <img src="https://anmlfoundation.org/images/anml-foundation-logo.png" alt="ANML Foundation" width="500">
+    <img src="https://raw.githubusercontent.com/ANML-Foundation/.github/main/images/anml-foundation-logo.png" alt="ANML Foundation" width="500">
   </a>
 </p>
 
