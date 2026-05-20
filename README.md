@@ -68,10 +68,11 @@ ANML doesn't replace existing protocols — it gives agents the semantic context
 
 ## Repositories
 
-| Repo | Description |
-|---|---|
-| [anml-server-rust](https://github.com/ANML-Foundation/anml-server-rust) | Reference ANML server implementation in Rust |
-| [anml-client-rust](https://github.com/ANML-Foundation/anml-client-rust) | Reference ANML client implementation in Rust |
+| Repo | Language | Description |
+|---|---|---|
+| [anml-server-rust](https://github.com/ANML-Foundation/anml-server-rust) | Rust | Reference ANML server implementation |
+| [anml-client-rust](https://github.com/ANML-Foundation/anml-client-rust) | Rust | Reference ANML client implementation |
+| [anml-client-node](https://github.com/ANML-Foundation/anml-client-node) | TypeScript | ANML client for Node.js (`@anml-foundation/client`) |
 
 ## Quick Example
 
