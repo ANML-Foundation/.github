@@ -28,6 +28,18 @@ ANML is that format. A single duckument tells any agent — from any vendor — 
 - 📖 [Why ANML?](https://anmlfoundation.org/why-anml)
 - 📬 [sponsors@anmlfoundation.org](mailto:sponsors@anmlfoundation.org)
 
+### Official SDKs
+
+| Package | Language | Install |
+|---|---|---|
+| [anml-client-python](https://github.com/ANML-Foundation/anml-client-python) | Python | `pip install anml-client` |
+| [anml-server-python](https://github.com/ANML-Foundation/anml-server-python) | Python | `pip install anml-server` |
+| [anml-client-node](https://github.com/ANML-Foundation/anml-client-node) | TypeScript | `npm install @anml-foundation/client` |
+| [anml-server-node](https://github.com/ANML-Foundation/anml-server-node) | TypeScript | `npm install @anml-foundation/server` |
+| [anml-client-rust](https://github.com/ANML-Foundation/anml-client-rust) | Rust | `cargo add anml-client` |
+| [anml-server-rust](https://github.com/ANML-Foundation/anml-server-rust) | Rust | `cargo add anml-server` |
+
 ### Status
 
 ANML is an active Internet-Draft (`draft-jeskey-anml-00`) submitted to the IETF. We're looking for early adopters, contributors, and sponsors to help shape the standard.
+
